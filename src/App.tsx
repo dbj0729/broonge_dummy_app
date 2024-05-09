@@ -30,7 +30,7 @@ const App = () => {
 
     setLoading(true)
     const connection = new Telnet()
-    const host = targetServer === '부릉이서버' ? '192.168.0.57' : 'broonge.alisa.co.kr'
+    const host = targetServer === '부릉이서버' ? '43.200.197.126' : 'broonge.alisa.co.kr'
 
     const params = {
       // host: '192.168.0.57',
