@@ -12,10 +12,9 @@
   },
   "dependencies": {
     "@types/react-native-telnet-client": "^1.0.0",
+    "android-platform-tools": "^3.0.2",
     "axios": "^1.2.0",
-    "iamport-react-native": "^2.0.2",
     "patch-package": "^6.5.0",
-    "react": "18.1.0",
     "react-native": "0.70.6",
     "react-native-nmap": "^0.0.66",
     "react-native-tcp-socket": "^6.0.3",

@@ -17,7 +17,7 @@ const App = () => {
   const [resultText, setResultText] = useState('')
   const [loading, setLoading] = useState(false)
   const [bikeId, setBikeId] = useState(0)
-  const [targetServer, setTargetServer] = useState<'부릉이서버' | '알리사서버'>('알리사서버')
+  const [targetServer, setTargetServer] = useState<'체리서버' | '알리사서버'>('체리서버')
   const [shortBikeId, setShortBikeId] = useState('')
 
   const test1 = async (order: string) => {
@@ -30,7 +30,7 @@ const App = () => {
 
     setLoading(true)
     const connection = new Telnet()
-    const host = targetServer === '부릉이서버' ? '43.200.197.126' : 'broonge.alisa.co.kr'
+    const host = targetServer === '체리서버' ? '15.165.112.232' : 'broonge.alisa.co.kr'
 
     const params = {
       // host: '192.168.0.57',
@@ -138,11 +138,11 @@ const App = () => {
 
         <TouchableOpacity
           style={tw`bg-gray-400 py-2 mt-4 w-24 items-center ${
-            targetServer === '부릉이서버' ? 'bg-red-900' : 'bg-gray-400'
+            targetServer === '체리서버' ? 'bg-red-900' : 'bg-gray-400'
           }`}
-          onPress={() => setTargetServer('부릉이서버')}
+          onPress={() => setTargetServer('체리서버')}
           hitSlop={{ top: 10, left: 10, bottom: 10, right: 10 }}>
-          <Text style={tw`text-white font-semibold`}>부릉이 실서버</Text>
+          <Text style={tw`text-white font-semibold`}>체리서버</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
