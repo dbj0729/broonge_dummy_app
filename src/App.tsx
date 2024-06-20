@@ -54,7 +54,7 @@ const App = () => {
       newBikeId = bikeId
     }
 
-    const res = await connection.send(`a001,${newBikeId},${order}`)
+    const res = await connection.send(`a001,${newBikeId},${order},nc,asdf`)
     console.log(res)
     setResultText(res)
 
